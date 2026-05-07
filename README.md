@@ -4,15 +4,21 @@
 
 <div align="center">
 
-<a href="https://arxiv.org/abs/2509.16117" style="display: inline-block;">
-    <img src="https://img.shields.io/badge/arXiv%20paper-2509.16117-b31b1b.svg" alt="arXiv" style="height: 20px; vertical-align: middle;">
-</a>&nbsp;
-<a href="https://research.nvidia.com/labs/dir/DiffusionNFT" style="display: inline-block;">
-    <img src="https://img.shields.io/badge/Project_page-Website-green" alt="project page" style="height: 20px; vertical-align: middle;">
-</a>&nbsp;
-<a href="https://huggingface.co/worstcoder/SD3.5M-DiffusionNFT-MultiReward" style="display: inline-block;">
-    <img src="https://img.shields.io/badge/Model-HuggingFace-blue" alt="model" style="height: 20px; vertical-align: middle;">
-</a>&nbsp;
+<a href="https://byliutao.github.io/cdm_page/">
+    <img src="https://img.shields.io/badge/Project_Page-0055b3?logo=githubpages&logoColor=white" alt="Project Page">
+</a>
+<a href="https://huggingface.co/byliutao/stable-diffusion-3-medium-turbo">
+    <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Model-SD3.5_Medium-ffc107" alt="SD3.5-Medium Model">
+</a>
+<a href="https://huggingface.co/byliutao/Longcat-Image-Turbo">
+    <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Model-LongCat-ffc107" alt="LongCat Model">
+</a>
+<a href="https://github.com/byliutao/cdm">
+    <img src="https://img.shields.io/badge/GitHub-byliutao%2Fcdm-black?logo=github&logoColor=white" alt="GitHub">
+</a>
+<a href="https://arxiv.org/abs/">
+    <img src="https://img.shields.io/badge/Paper-2509.161-b31b1b?logo=arxiv&logoColor=white" alt="arXiv Paper">
+</a>
 
 </div>
 
