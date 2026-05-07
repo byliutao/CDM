@@ -117,7 +117,7 @@ python -m scripts.save \
 ```bash
 accelerate launch --num_processes 1 -m scripts.eval \
     --phase generate \
-    --model_path "logs/pipelines/test/checkpoint-10" \
+    --model_path "logs/pipelines/test/checkpoint-2000" \
     --eval_metrics imagereward clipscore pickscore hpsv2 hpsv3 aesthetic ocr dpgbench fid \
     --output_dir "logs/evaluations/test" \
     --base_model sd3 \
@@ -152,10 +152,4 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 If our work assists your research, please consider giving us a star ⭐ or citing us:
 
 ```bibtex
-@article{diffusionnft2025,
-  title   = {DiffusionNFT: Online Diffusion Reinforcement with Forward Process},
-  author  = {NVlabs},
-  journal = {arXiv preprint arXiv:2509.16117},
-  year    = {2025}
-}
 ```
