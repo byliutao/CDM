@@ -8,7 +8,7 @@
     <img src="https://img.shields.io/badge/Project_Page-0055b3?logo=githubpages&logoColor=white" alt="Project Page">
 </a>
 <a href="https://huggingface.co/byliutao/stable-diffusion-3-medium-turbo">
-    <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Model-SD3.5_Medium-ffc107" alt="SD3.5-Medium Model">
+    <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Model-SD3.5_Medium-ffc107" alt="SD3-Medium Model">
 </a>
 <a href="https://huggingface.co/byliutao/Longcat-Image-Turbo">
     <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Model-LongCat-ffc107" alt="LongCat Model">
