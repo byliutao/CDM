@@ -83,10 +83,6 @@ python scripts/infer/longcat.py # LongCat
 ## Training
 
 ```bash
-# Clone this repository
-git clone https://github.com/NVlabs/DiffusionNFT.git
-cd DiffusionNFT
-
 # Create and activate the training environment
 conda create -n cdm_train python=3.10
 conda activate cdm_train
