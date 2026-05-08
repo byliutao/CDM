@@ -158,4 +158,13 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 If our work assists your research, please consider giving us a star ⭐ or citing us:
 
 ```bibtex
+@misc{liu2026continuoustimedistributionmatchingfewstep,
+      title={Continuous-Time Distribution Matching for Few-Step Diffusion Distillation}, 
+      author={Tao Liu and Hao Yan and Mengting Chen and Taihang Hu and Zhengrong Yue and Zihao Pan and Jinsong Lan and Xiaoyong Zhu and Ming-Ming Cheng and Bo Zheng and Yaxing Wang},
+      year={2026},
+      eprint={2605.06376},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2605.06376}, 
+}
 ```
