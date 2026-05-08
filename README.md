@@ -124,7 +124,7 @@ python -m scripts.save \
 accelerate launch --num_processes 1 -m scripts.eval \
     --phase generate \
     --model_path "logs/pipelines/test/checkpoint-2000" \
-    --eval_metrics imagereward clipscore pickscore hpsv2 hpsv3 aesthetic ocr dpgbench fid \
+    --eval_metrics imagereward clipscore pickscore hpsv2 hpsv3 aesthetic ocr dpgbench \
     --output_dir "logs/evaluations/test" \
     --base_model sd3 \
     --save_images
@@ -145,7 +145,7 @@ pip install fairseq --no-deps
 
 accelerate launch --num_processes 1 -m scripts.eval \
     --phase evaluate \
-    --eval_metrics imagereward clipscore pickscore hpsv2 hpsv3 aesthetic ocr dpgbench fid \
+    --eval_metrics imagereward clipscore pickscore hpsv2 hpsv3 aesthetic ocr dpgbench \
     --output_dir "logs/evaluations/test"
 ```
 
