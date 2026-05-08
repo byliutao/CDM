@@ -76,7 +76,7 @@ conda activate cdm_infer
 pip install -r config/requirements_infer.txt
 
 # Run inference
-python scripts/infer/sd3_m.py   # SD3.5-Medium
+python scripts/infer/sd3_m.py   # SD3-Medium
 python scripts/infer/longcat.py # LongCat
 ```
 
@@ -91,11 +91,11 @@ pip install flash-attn==2.7.4.post1 --no-build-isolation  # May take 1-2 hours
 
 # Launch training with FSDP2
 accelerate launch --config_file config/accelerate_fsdp2.yaml \
-    --num_processes 1 -m scripts.train \
-    --config config/config.py:sd3      # SD3.5-Medium
+    --num_processes 8 -m scripts.train \
+    --config config/config.py:sd3      # SD3-Medium
 
 accelerate launch --config_file config/accelerate_fsdp2.yaml \
-    --num_processes 1 -m scripts.train \
+    --num_processes 8 -m scripts.train \
     --config config/config.py:longcat  # LongCat
 ```
 
@@ -111,13 +111,13 @@ conda activate cdm_train
 python -m scripts.save \
     --experiment_dir "logs/experiments/sd3/test" \
     --output_dir "logs/pipelines/test" \
-    --checkpoint_steps "10"
+    --checkpoint_steps "2000"
 ```
 
 ### Step 2 — Generate images
 
 ```bash
-accelerate launch --num_processes 1 -m scripts.eval \
+accelerate launch --num_processes 8 -m scripts.eval \
     --phase generate \
     --model_path "logs/pipelines/test/checkpoint-2000" \
     --eval_metrics imagereward clipscore pickscore hpsv2 hpsv3 aesthetic ocr dpgbench \
@@ -139,7 +139,7 @@ pip install fairseq --no-deps
 # NOTE: If running on multiple GPUs, download checkpoints on 1 GPU first.
 # For FID evaluation, place COCO 2014 val images under: dataset/coco2014val_10k/images
 
-accelerate launch --num_processes 1 -m scripts.eval \
+accelerate launch --num_processes 8 -m scripts.eval \
     --phase evaluate \
     --eval_metrics imagereward clipscore pickscore hpsv2 hpsv3 aesthetic ocr dpgbench \
     --output_dir "logs/evaluations/test"
