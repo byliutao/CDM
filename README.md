@@ -137,7 +137,7 @@ pip install image-reward --no-deps
 pip install fairseq --no-deps
 
 # NOTE: If running on multiple GPUs, download checkpoints on 1 GPU first.
-# For FID evaluation, place COCO 2014 val images under: dataset/coco2014val_10k/images
+# For FID evaluation, place download ref image from byliutao/coco2014val_10k and put it under dataset/coco2014val_10k
 
 accelerate launch --num_processes 8 -m scripts.eval \
     --phase evaluate \
